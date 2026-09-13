@@ -1,10 +1,12 @@
 import './assets/css/Home.css'
 import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 
 function Home() {
   return(
     <>
-        <Header></Header>
+        <Header/>
+        <Footer/>
     </>
   )
 }

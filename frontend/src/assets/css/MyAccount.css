@@ -1,0 +1,10 @@
+.myAccount{
+    text-decoration: none;
+    color: #0E1F35;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.myAccount:hover{
+    background-color: #D9D9D9;
+}

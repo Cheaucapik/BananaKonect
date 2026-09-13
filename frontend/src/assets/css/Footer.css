@@ -1,0 +1,97 @@
+.footerItem {
+  color: #0E1F35;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-size: clamp(0.75rem, 0.5rem + 1vw, 1.125rem);
+}
+
+.social-networks-logo{
+  width: clamp(17px, 2vw, 27px);
+}
+
+.footerItem:hover {
+  color: #FD9F01;
+}
+
+footer{
+  background-color : #FBFAF9;
+  box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1);
+  bottom : 0; 
+  position : absolute;
+  padding: clamp(1rem, calc(0rem + 80vw), 2rem);
+  width : 100%;
+  display : flex;
+  flex-direction : row; 
+  align-items : center;
+}
+
+footer > div:first-child{
+  display : flex;
+  flex-direction : row; 
+  justify-content : space-evenly;
+  flex : 2;
+}
+
+footer > div:last-child{
+  flex : 1; 
+  align-items : center;
+  display : flex;
+  flex-direction : column
+}
+
+.social-networks{
+  display : flex; 
+  justify-content : center;
+  gap: clamp(0.6rem, 0.5rem + 1.5vw, 1.5rem);
+}
+
+.links{
+  display : flex;
+  justify-content : center; 
+  flex-direction : column;
+  gap: clamp(0rem, calc(-0.268rem + 1.19vw), 0.625rem);
+}
+
+.links > div{
+  display: flex;
+  gap : clamp(0.625rem, 1rem + 0.5vw, 1.25rem)
+}
+
+.links > p{
+  font-size: clamp(0.688rem, calc(0.5rem + 0.833vw), 1.125rem);
+  text-align : center
+}
+
+#bar{
+  width: 1px;
+  height: 100px;
+  background-color: #0E1F35;
+  margin: 0 16px
+}
+
+.site-logo {
+  width: clamp(140px, 15vw, 306px);
+}
+
+@media (max-width: 390px){
+  #bar{
+    width: 250px;
+    height: 1px;
+    margin: 16px 0px
+  }
+
+  footer > div:first-child{
+    flex : none;
+    justify-content : space-between;
+    gap : 30px;
+  }
+
+  
+  footer > div:last-child{
+    flex : none; 
+  }
+
+  footer{
+    flex-direction : column; 
+  }
+}

@@ -39,3 +39,14 @@
 .headerText:hover{
     color : #25436a;
 }
+
+button{
+	background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    text-align: inherit;
+    color: inherit;
+}
