@@ -8,7 +8,7 @@ import Instagram from '../assets/icons/Instagram'
 import { useMediaQuery } from 'react-responsive'
 
 export default function Footer() {
- const isMobile = useMediaQuery({ maxWidth: 390 });
+ const isMobile = useMediaQuery({ maxWidth: 425 });
 
   return (
     <footer>

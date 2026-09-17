@@ -1,47 +1,123 @@
-.headerText{
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: clamp(0.9375rem, calc(0.723rem + 1.07vw), 1.875rem);
+    padding-left: clamp(0.9375rem, calc(0.723rem + 1.07vw), 1.875rem);
+    background-color: #FBFAF9; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding-top: clamp(0.625rem, calc(0.488rem + 0.68vw), 1.25rem);
+    padding-bottom: clamp(0.625rem, calc(0.488rem + 0.68vw), 1.25rem);
+}
+
+.header-left-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(1.25rem, calc(0.977rem + 1.36vw), 2.5rem);
+    margin-left: clamp(1.25rem, calc(0.977rem + 1.36vw), 2.5rem);
+    align-items: center;
+}
+
+.header-right-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-publish-btn {
+    background-color: #FD9F01;
+    display: flex;
+    flex-direction: row;
+    border-radius: clamp(0.625rem, calc(0.488rem + 0.68vw), 0.9375rem);
+    padding: clamp(0.5rem, calc(0.398rem + 0.51vw), 0.9375rem);
+    gap: clamp(0.375rem, calc(0.318rem + 0.28vw), 0.625rem);
+}
+
+.header-plus-icon {
+    align-self: center;
+}
+
+.header-publish-text {
+    color: white;
     font-weight: bold;
-    color : #0E1F35;
+    font-size: clamp(0.8rem, calc(0.44rem + 0.74vw), 1rem);
+}
+
+.header-account-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(0.375rem, calc(0.318rem + 0.28vw), 0.625rem);
+    background-color: #EFEFEF;
+    padding: clamp(0.375rem, calc(0.318rem + 0.28vw), 0.625rem);
+    border-radius: clamp(1.25rem, calc(0.977rem + 1.36vw), 1.875rem);
+    padding-left: clamp(0.75rem, calc(0.58rem + 0.85vw), 1.25rem);
+    padding-right: clamp(0.75rem, calc(0.58rem + 0.85vw), 1.25rem);
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.header-account-btn p {
+    font-size: clamp(0.8rem, calc(0.44rem + 0.74vw), 1rem);
+}
+
+.header-account-btn.active {
+    background-color: #0E1F35;
+}
+
+.headerText {
+    font-weight: bold;
+    color: #0E1F35;
     text-decoration: none;
     position: relative;
+    font-size: clamp(0.9rem, calc(0.5rem + 0.83vw), 1.125rem);
 }
 
-.headerText_active{
+.headerText_active {
     font-weight: bold;
-    color : #FD9F01;
+    color: #FD9F01;
     text-decoration: none;
     position: relative;
+    font-size: clamp(0.9rem, calc(0.5rem + 0.83vw), 1.125rem);
 }
 
-.headerText_active::after{
+.headerText_active::after {
     padding-top: 10px;
-	content: "";
-	border-bottom: 3px solid #FD9F01;
-	display: block;
-	transform-origin: left;
-	transform: scaleX(0);
-	transition: transform 0.3s ease;
+    content: "";
+    border-bottom: 3px solid #FD9F01;
+    display: block;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-.headerText::after{
+.headerText::after {
     padding-top: 10px;
-	content: "";
-	border-bottom: 3px solid #25436a;
-	display: block;
-	transform-origin: left;
-	transform: scaleX(0);
-	transition: transform 0.3s ease;
+    content: "";
+    border-bottom: 3px solid #25436a;
+    display: block;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-.headerText_active::after, .headerText:hover::after{
-	transform : scaleX(1);
+.headerText_active::after, .headerText:hover::after {
+    transform: scaleX(1);
 }
 
-.headerText:hover{
-    color : #25436a;
+.headerText:hover {
+    color: #25436a;
 }
 
-button{
-	background: none;
+button {
+    background: none;
     border: none;
     padding: 0;
     margin: 0;
@@ -49,4 +125,17 @@ button{
     cursor: pointer;
     text-align: inherit;
     color: inherit;
+}
+
+.site-logo-text {
+    width: clamp(7.5rem, calc(4.554rem + 13.095vw), 14.375rem);
+}
+
+.responsive-icon {
+    width: clamp(1.25rem, calc(0.982rem + 1.19vw), 1.875rem);
+    height: clamp(1.25rem, calc(0.982rem + 1.19vw), 1.875rem);
+}
+
+header > div:nth-child(2) {
+    gap: clamp(1.25rem, calc(0.982rem + 1.19vw), 1.875rem);
 }

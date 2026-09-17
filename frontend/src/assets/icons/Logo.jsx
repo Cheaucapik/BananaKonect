@@ -1,7 +1,6 @@
-const Logo = ({size = 100}) => (
+const Logo = () => (
   <svg
-    width={size*3.538461538461538}
-    height={size}
+    className="site-logo-text"
     fill="none"
     viewBox="0 0 230 65"
   >
