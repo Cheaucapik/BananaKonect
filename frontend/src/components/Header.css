@@ -9,6 +9,7 @@ header {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding-top: clamp(0.625rem, calc(0.488rem + 0.68vw), 1.25rem);
     padding-bottom: clamp(0.625rem, calc(0.488rem + 0.68vw), 1.25rem);
+    align-items: center;
 }
 
 .header-left-group {
@@ -22,12 +23,24 @@ header {
     gap: clamp(1.25rem, calc(0.977rem + 1.36vw), 2.5rem);
     margin-left: clamp(1.25rem, calc(0.977rem + 1.36vw), 2.5rem);
     align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 1;
+    transition: max-width 0.4s ease-in-out, opacity 0.3s ease-in-out, margin-left 0.4s ease-in-out;
+}
+
+.header-nav.hidden {
+    max-width: 0;
+    opacity: 0;
+    margin-left: 0; 
+    pointer-events: none; 
 }
 
 .header-right-group {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: clamp(10px, calc(7.037px + 0.926vw), 20px);
 }
 
 .header-publish-btn {
@@ -116,17 +129,6 @@ header {
     color: #25436a;
 }
 
-button {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    cursor: pointer;
-    text-align: inherit;
-    color: inherit;
-}
-
 .site-logo-text {
     width: clamp(7.5rem, calc(4.554rem + 13.095vw), 14.375rem);
 }
@@ -138,4 +140,21 @@ button {
 
 header > div:nth-child(2) {
     gap: clamp(1.25rem, calc(0.982rem + 1.19vw), 1.875rem);
+}
+
+.header-middle-group{
+    width: 50%;
+}
+
+.search-container{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    transition: width 0.4s ease-in-out, opacity 0.3s ease-in-out
+}
+
+.search-container.open {
+    width: clamp(15.625rem, calc(-36.607rem + 64.286vw), 43.75rem);
+    opacity: 1;
 }

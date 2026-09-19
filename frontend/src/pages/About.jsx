@@ -1,5 +1,5 @@
-import './assets/css/About.css'
-import Header from './components/Header.jsx'
+import './About.css'
+import Header from '../components/Header.jsx'
 
 function About() {
   return(

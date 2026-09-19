@@ -16,8 +16,6 @@
 footer {
   background-color: #FBFAF9;
   box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1);
-  bottom: 0; 
-  position: absolute;
   padding: clamp(0.75rem, 0.5rem + 1.5vw, 1.5rem);
   width: 100%;
   display: flex;
@@ -74,7 +72,7 @@ footer > div:last-child {
   width: clamp(120px, 13vw, 260px);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 700px) {
   #bar {
     width: 180px;
     height: 1px;
@@ -82,14 +80,10 @@ footer > div:last-child {
   }
 
   footer > div:first-child {
-    flex: none;
     justify-content: space-between;
     gap: 20px;
   }
 
-  footer > div:last-child {
-    flex: none; 
-  }
 
   footer {
     flex-direction: column; 

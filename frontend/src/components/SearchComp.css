@@ -1,0 +1,53 @@
+.search > form > button:last-child{
+    background-color: #0E1F35;
+    height: clamp(2rem, calc(1.498rem + 1.233vw), 2.5rem);
+    width: clamp(2rem, calc(1.498rem + 1.233vw), 2.5rem);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search > form > input {
+    width: 90%;
+}
+
+.search > form {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.search{
+    background-color: #E2E2E2;
+    height: clamp(2.5rem, calc(1.873rem + 1.541vw), 3.125rem);
+    border-radius: 20px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    text-align: inherit;
+    color: inherit;
+}
+
+.erase{
+    background-color: #FD9F01;
+    border-radius: 30px;
+    width: clamp(1.25rem, calc(1.113rem + 0.61vw), 1.875rem);
+    height: clamp(1.25rem, calc(1.113rem + 0.61vw), 1.875rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.x{
+    height: clamp(0.938rem, calc(0.8rem + 0.61vw), 1.563rem);
+    width: clamp(0.938rem, calc(0.8rem + 0.61vw), 1.563rem);
+}

@@ -1,0 +1,39 @@
+.title{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+main{
+  padding : 20px;
+}
+
+h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section{
+  padding-bottom: 10px;
+}
+
+.annonces{
+  display: flex;
+  flex-direction: row;
+  gap : 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.annonces > * {
+  flex-shrink: 0; 
+}
+
+.annonces::-webkit-scrollbar {
+  display: none;
+}
+
+.title-prio{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

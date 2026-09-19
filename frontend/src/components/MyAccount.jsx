@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../assets/css/MyAccount.css'
+import './MyAccount.css'
 
 export default function MyAccount() {
   return (

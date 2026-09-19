@@ -1,8 +1,8 @@
-import './assets/css/App.css'
+import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home.jsx'
-import About from './About.jsx'
-import Research from './Research.jsx'
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import Research from './pages/Research.jsx'
 
 function App() {
   return(

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo2 from '../assets/icons/Logo2'
-import '../assets/css/Footer.css'
+import './Footer.css'
 import Linkedin from '../assets/icons/Linkedin'
 import Facebook from '../assets/icons/Facebook'
 import Twitter from '../assets/icons/Twitter'
@@ -8,7 +8,7 @@ import Instagram from '../assets/icons/Instagram'
 import { useMediaQuery } from 'react-responsive'
 
 export default function Footer() {
- const isMobile = useMediaQuery({ maxWidth: 425 });
+ const isMobile = useMediaQuery({ maxWidth: 700 });
 
   return (
     <footer>
