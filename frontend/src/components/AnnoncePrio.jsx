@@ -9,7 +9,7 @@ export default function AnnoncePrio() {
         <img src="" alt="Annonce" className="annonce-img" />
         <span className="annonce-badge">À la une</span>
         <button className="annonce-fav-btn">
-          <Heart size={20} color="#ffffff" />
+          <Heart size={17} color="#ffffff" />
         </button>
       </div>
 
@@ -25,7 +25,7 @@ export default function AnnoncePrio() {
               <p className="annonce-service">DJ - Animateur</p>
               <div className="annonce-location">
                 <MapPin size={10} color="#6b7280" />
-                <span>Paris et Île-de-France</span>
+                <span>Paris et Île-de-Franceeeeee</span>
               </div>
               <div className="annonce-rating">
                 <Star size={10} color="#FD9F01" fill="#FD9F01" />
@@ -51,7 +51,6 @@ export default function AnnoncePrio() {
             <span className="annonce-tag">Soirée privée</span>
             <span className="annonce-tag">Entreprise</span>
           </div>
-          {/* <button className="annonce-btn">Voir l'annonce</button> */}
         </div>
       </div>
     </Link>

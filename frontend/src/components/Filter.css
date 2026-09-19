@@ -1,0 +1,19 @@
+.filter{
+  background-color: #E0E5EB;
+  border-radius: 30px;
+  border : 1px solid #9D9D9D;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+}
+
+.filter:active{
+  background-color: #99A5B7;
+  color : white
+}
+
+
+.filter.active{
+  background-color: #99A5B7;
+  color : white
+}

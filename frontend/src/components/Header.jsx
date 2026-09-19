@@ -82,7 +82,7 @@ export default function Header() {
               </div>
             </>
           )}
-
+        <div className='header-logo'>
           <Bell className="responsive-icon" color="#0E1F35" />
           <MessageSquareMore className="responsive-icon" color="#0E1F35" />
 
@@ -94,6 +94,7 @@ export default function Header() {
               {showMenu && <MenuComp onClose={() => setShowMenu(false)} />}
             </div>
           )}
+          </div>
 
           {showMenu && (
             <div

@@ -158,3 +158,9 @@ header > div:nth-child(2) {
     width: clamp(15.625rem, calc(-36.607rem + 64.286vw), 43.75rem);
     opacity: 1;
 }
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    gap: clamp(0.625rem, calc(0.146rem + 2.128vw), 1.875rem);
+}
