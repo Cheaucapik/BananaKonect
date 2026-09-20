@@ -152,3 +152,10 @@ section{
 .orange{
   color: #FD9F01;
 }
+
+@media (max-width : 375px)  {
+  .hero{
+    height: 200px;
+    margin-bottom: 150px;
+  }
+}

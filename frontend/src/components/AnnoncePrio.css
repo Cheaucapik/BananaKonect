@@ -190,3 +190,15 @@
   cursor: pointer;
   width: 100%;
 }
+
+@media (max-width : 375px)  {
+  .annonce-card{
+    width: 60%;
+  }
+}
+
+@media (max-width : 320px)  {
+  .annonce-card{
+    width: 70%;
+  }
+}

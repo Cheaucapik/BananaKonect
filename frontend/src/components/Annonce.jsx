@@ -1,10 +1,13 @@
 import './Annonce.css';
 import { Heart, MapPin, Star } from 'lucide-react'
+import { useMediaQuery } from 'react-responsive';
 
 export default function Annonce() {
+  const isMobile = useMediaQuery({ maxWidth: 375 })
+
   return (
     <div className="mp-card-wrapper">
-      {/* Partie image */}
+
       <div className="mp-card-media-side">
         <img 
           src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1" 
@@ -16,7 +19,6 @@ export default function Annonce() {
         </button>
       </div>
 
-      {/* Partie contenu */}
       <div className="mp-card-content-side">
         <div className="mp-card-top-row">
           <div className="mp-card-user-avatar">
@@ -33,7 +35,7 @@ export default function Annonce() {
             
             <div className="mp-card-geo">
                 <MapPin size={10} color="#6b7280" />
-                <span>Paris et Île-de-Franceeeeee</span>
+                <span>Paris et Île-de-France</span>
             </div>
 
             <div className="mp-card-score-box">
@@ -43,20 +45,42 @@ export default function Annonce() {
             </div>
           </div>
 
+        {!isMobile && 
           <div className="mp-card-pricing">
             <span className="mp-card-from">À partir de</span>
             <span className="mp-card-cost">500€</span>
           </div>
+        }
+          
         </div>
 
-        <div className="annonce-footer">
-          <div className="annonce-tags">
-            <span className="annonce-tag">Mariage</span>
-            <span className="annonce-tag">Anniversaire</span>
-            <span className="annonce-tag">Soirée privée</span>
-            <span className="annonce-tag">Entreprise</span>
-          </div>
+        {isMobile && 
+            <div className='mobile-price-tags'>
+              <div className="mp-card-pricing">
+                  <span className="mp-card-from">À partir de</span>
+                  <span className="mp-card-cost">500€</span>
+                </div>
+              <div className="annonce-footer">
+                <div className="annonce-tags">
+                  <span className="annonce-tag">Mariage</span>
+                  <span className="annonce-tag">Anniversaire</span>
+                  <span className="annonce-tag">Soirée privée</span>
+                  <span className="annonce-tag">Entreprise</span>
+                </div>
+              </div>
+            </div>
+            }
+
+        { !isMobile && 
+          <div className="annonce-footer">
+            <div className="annonce-tags">
+              <span className="annonce-tag">Mariage</span>
+              <span className="annonce-tag">Anniversaire</span>
+              <span className="annonce-tag">Soirée privée</span>
+              <span className="annonce-tag">Entreprise</span>
+            </div>
         </div>
+        }
       </div>
     </div>
   );
