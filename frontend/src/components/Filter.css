@@ -1,19 +1,21 @@
 .filter{
   background-color: #E0E5EB;
   border-radius: 30px;
-  border : 1px solid #9D9D9D;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 12px;
+  border: 1px solid #9D9D9D;
+  padding-left: clamp(15px, 1.2vw, 22px);
+  padding-right: clamp(15px, 1.2vw, 22px);
+  padding-top: clamp(6px, 0.6vw, 10px);
+  padding-bottom: clamp(6px, 0.6vw, 10px);
+  font-size: clamp(12px, 1vw, 15px);
+  cursor: pointer;
 }
 
 .filter:active{
   background-color: #99A5B7;
-  color : white
+  color: white;
 }
-
 
 .filter.active{
   background-color: #99A5B7;
-  color : white
+  color: white;
 }

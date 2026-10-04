@@ -1,7 +1,7 @@
 import Logo from '../assets/icons/Logo'
 import Account from '../assets/icons/Account'
 import './Header.css'
-import { Plus, Bell, MessageSquareMore, ChevronDown, Search, Menu, X } from 'lucide-react'
+import { Plus, Bell, MessageSquareMore, ChevronDown, Search, Menu, X, ChevronUp} from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 import MyAccount from './MyAccount.jsx'
@@ -136,7 +136,8 @@ export default function Header({search = false}) {
                 >
                   <Account className="responsive-icon" color={showMyAccount ? '#EFEFEF' : '#0E1F35'} />
                   <p style={{ color: showMyAccount ? '#EFEFEF' : '#0E1F35' }}>Mon compte</p>
-                  <ChevronDown size={20} color={showMyAccount ? '#EFEFEF' : '#0E1F35'} />
+                  {showMyAccount ? <ChevronUp size={20} color='#EFEFEF'/> : <ChevronDown size={20} color='#0E1F35' />
+                  }
                 </button>
                 {showMyAccount && <MyAccount />}
               </div>

@@ -1,7 +1,7 @@
 .mp-card-wrapper {
   display: flex;
   background: #ffffff;
-  border-radius: 14px;
+  border-radius: clamp(14px, 1.2vw, 18px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   width: 100%;
   overflow: hidden;
@@ -9,11 +9,10 @@
   margin: 0 auto;
 }
 
-/* Bloc Image */
 .mp-card-media-side {
   position: relative;
-  width: 115px;
-  min-width: 115px;
+  width: clamp(115px, 18vw, 260px);
+  min-width: clamp(115px, 18vw, 260px);
 }
 
 .mp-card-img {
@@ -30,8 +29,8 @@
   background: rgba(0, 0, 0, 0.3);
   border: none;
   border-radius: 50%;
-  width: 22px;
-  height: 22px;
+  width: clamp(22px, 2vw, 32px);
+  height: clamp(22px, 2vw, 32px);
   color: white;
   display: flex;
   align-items: center;
@@ -40,9 +39,8 @@
   cursor: pointer;
 }
 
-/* Bloc Infos */
 .mp-card-content-side {
-  padding: 8px;
+  padding: clamp(8px, 1.2vw, 16px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,13 +50,13 @@
 
 .mp-card-top-row {
   display: flex;
-  gap: 6px;
+  gap: clamp(6px, 1vw, 14px);
   align-items: center;
 }
 
 .mp-card-user-avatar {
-  width: 60px;
-  height: 60px;
+  width: clamp(60px, 5.5vw, 85px);
+  height: clamp(60px, 5.5vw, 85px);
   border-radius: 50%;
   background-color: #d1d5db;
   object-fit: cover;
@@ -71,7 +69,7 @@
 }
 
 .mp-card-heading {
-  font-size: 12px;
+  font-size: clamp(12px, 1.1vw, 18px);
   font-weight: 700;
   color: #0b1c3d;
   white-space: nowrap;
@@ -80,12 +78,12 @@
 }
 
 .mp-card-sub {
-  font-size: 10px;
+  font-size: clamp(10px, 0.9vw, 14px);
   color: #0b1c3d;
 }
 
 .mp-card-geo {
-  font-size: 9px;
+  font-size: clamp(9px, 0.8vw, 13px);
   color: #6b7280;
   gap: 2px;
   display: flex;
@@ -100,7 +98,7 @@
 }
 
 .mp-card-score-box {
-  font-size: 9px;
+  font-size: clamp(9px, 0.8vw, 13px);
   display: flex;
   align-items: center;
   gap: 2px;
@@ -115,7 +113,6 @@
   color: #9ca3af;
 }
 
-/* Prix */
 .mp-card-pricing {
   text-align: center;
   flex-shrink: 0;
@@ -123,16 +120,15 @@
 
 .mp-card-from {
   display: block;
-  font-size: 8px;
+  font-size: clamp(8px, 0.75vw, 12px);
   color: #0b1c3d;
   font-weight: 600;
   white-space: nowrap;
-  font-weight: bold;
 }
 
 .mp-card-cost {
   display: block;
-  font-size: 13px;
+  font-size: clamp(13px, 1.3vw, 20px);
   font-weight: 800;
   color: #f59e0b;
 }
@@ -171,9 +167,9 @@ p {
 .annonce-tag {
   background-color: #f3f4f6;
   color: #4b5563;
-  padding: 2px 4px;
+  padding: clamp(2px, 0.3vw, 5px) clamp(4px, 0.6vw, 10px);
   border-radius: 20px;
-  font-size: 0.5rem;
+  font-size: clamp(0.5rem, 0.7vw, 0.85rem);
   font-weight: 500;
   white-space: nowrap;
 }
